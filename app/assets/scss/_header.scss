@@ -1,0 +1,36 @@
+/* 05 - header */
+@media(max-width:767px){
+.navbar-brand {width: 70%;}
+}
+@media(min-width:992px){
+   .navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: .5rem;
+    padding-left: .5rem;
+	text-transform: uppercase;
+	font-size: 0.9rem;
+	   font-weight: 700;
+	   
+	&::before {
+    content: "";
+    display: inline-block;
+	width: 0;
+height: 0;
+border-style: solid;
+border-width: 0 15px 10px 0;
+border-color: transparent #b7b7b7 transparent transparent;	
+		margin-right: 0.4rem;
+  }
+	   &:hover{
+		color: $tc-primary-color;  
+		   &::before {
+			 border-color: transparent $tc-primary-color transparent transparent;	  
+		   }
+	   }
+}
+}
+@media (min-width:1200px) {
+	.rtbtn {width: 270px;} 
+	.navbar-expand-lg .navbar-nav .nav-link {
+	margin: 0 .5rem;
+	}
+}

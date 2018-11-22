@@ -1,0 +1,64 @@
+/*04 - buttons*/
+.btn{
+    font-family: $default-font;
+	text-transform: uppercase;
+	/*@include border-radius(0px);*/
+	border-width: 2px;
+	font-size: 100%;
+	padding-left: 2rem;
+	padding-right: 2rem;
+}
+.btn-rounded {@include border-radius(35px);}
+.btn-gradient{
+	@include btn-gradient();
+	color: $white-color !important;
+	@include box-shadow(0px 1px 21px 0px rgba(0, 0, 0, 0.25));
+	border: none;
+	padding: 15px 35px;
+	/*font-size: 1.1rem;*/
+	font-weight: 700;
+	&:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus{
+       @include btn-hover-gradient();
+		color: $white-color;
+    }
+}
+.btn-outline-primary-tc{
+	color: $tc-primary-color;
+	border-color: $tc-primary-color;
+	background: none;
+	&:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus{
+        background: $tc-primary-color;
+		border-color: $tc-primary-color;
+		color: $white-color;
+    }
+}
+.btn-primary-tc{
+	color: $white-color;
+	border-color: $tc-primary-color;
+	background: $tc-primary-color;
+	&:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus{
+        background: $solidbtn-hover-color;
+		border-color: $solidbtn-hover-color;
+		color: $white-color;
+    }
+}
+.btn-white-tc{
+	color: $base-color;
+	border-color: $white-color;
+	 background: $white-color;
+	&:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus{    
+		border-color: $default-color;
+		color: $base-color;
+		 background: $default-color;
+    }
+}
+.btn-outline-white-tc{
+	color: $white-color !important;
+	border-color: $white-color;
+	&:hover,&:focus,&.focus,&.active,&.focus:focus,&.active:focus{
+        background: $white-color;
+		border-color: $white-color;
+		color: $base-color !important;
+    }
+}
+

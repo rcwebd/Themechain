@@ -1,0 +1,79 @@
+/*02 - Base */
+html,body{
+    height: 100%;
+}
+body{
+    font-family: $default-font;
+    background: $white-color;
+    font-weight: 400;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    color:$base-color;
+	font-size: 0.9rem;
+}
+a, button{
+    @include transition(all 0.4s);
+    text-decoration: none;
+}
+
+.sectionTitle {
+	font-weight: 700;
+	color: $base-color;
+	font-size: 2.5rem;
+	text-transform: uppercase;
+}
+
+.bg-primary-tc {
+	background: $tc-primary-color;
+	color: $white-color;
+	h1, h2, h3, h4, h5, h6{
+		color: $white-color;
+
+	}
+	p, a{
+		color: $tc-secondary-color;
+	}
+}
+.bg-light-tc {
+	background: $default-color;
+}
+.text-primary-tc {
+	color: $tc-primary-color !important;
+}
+.text-secondary-tc {
+	color: $tc-secondary-color !important;
+}
+.text-black-tc {
+	color: $base-color !important;
+}
+.socialM a {
+		font-size: 1.2rem;
+		display: inline-block;
+		width: 35px;
+		height: 35px;
+	}
+.form-control {
+	height: 40px;
+}
+/*To fix IE horizental scroll issue*/
+@media screen\0 {
+	html{overflow: hidden; overflow-y: scroll;}
+}
+#videoModal {
+.modal-content{background: #000 !important;}
+.modal-body {
+  position:relative;
+  padding:0px;
+}
+.close {
+  position:absolute;
+  right:0px;
+  top:-40px;
+  z-index:999;
+  font-size:2rem;
+  font-weight: normal;
+  color:#fff;
+  opacity:1;
+}
+}

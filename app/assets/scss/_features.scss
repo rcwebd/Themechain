@@ -1,0 +1,32 @@
+/* 07 - features */
+.features {
+	background-color:$tc-primary-color;
+	.lticon {
+ @include border-radius(50%);
+  background-color:$tc-secondary-color;
+  
+	@include box-shadow(0px 0px 24px 0px rgba(0, 0, 0, 0.04));
+  width: 140px;
+  height: 140px;
+float:left;
+		text-align: center;
+		line-height: 175px;
+		color: $tc-primary-color;
+		
+		i{font-size: 4rem;}
+	}
+.rttext {
+	width:calc(100% - 160px);
+	float:left;
+	margin-left: 20px;
+	
+	h5 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1rem;
+	}
+	p{
+		line-height: 1.7;
+	}
+	}
+}

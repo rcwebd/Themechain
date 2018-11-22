@@ -1,0 +1,19 @@
+//01 - variables
+$tc-primary-color:#293388; //replace this color code with your favorite one
+$tc-secondary-color:#5267f6; // Secondary gradient color for brand
+$default-font:'Oxygen', sans-serif; //default font of this template
+$base-color:#333;
+$default-color:#f2f2f2;
+$white-color:#FFF;
+$solidbtn-hover-color:#064ff6;
+
+$green-color:#a5d16c;
+$blue-color:#32b3f6;
+$yellow-color:#FFB400;
+$gold-color:#dbcf08;
+$purple-color:#9D4A9C;
+$orange-color:#F37B53;
+$oranges-color:#F37B53;
+$mozGradient: -moz-linear-gradient( 0deg, $tc-primary-color 0%, $tc-secondary-color 100%);
+$webkitGradient: -webkit-linear-gradient( 0deg, $tc-primary-color 0%, $tc-secondary-color 100%);
+$msGradient: -ms-linear-gradient( 0deg, $tc-primary-color 0%, $tc-secondary-color 100%);

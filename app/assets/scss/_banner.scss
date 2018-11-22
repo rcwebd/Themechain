@@ -1,0 +1,97 @@
+/* 06 - banner */
+.banner {
+/*@include bg-gradient();*/
+	background: $white-color;
+	position: relative;
+	text-transform: uppercase;
+	margin-top: 73px;
+	.poscon {position: relative; z-index: 99;}
+	h1{font-weight: 700; font-size: 2rem; line-height: 1.5;}
+	h5 {font-weight: 300; line-height: 1.6; text-transform: none;}
+	.card {
+		@include box-shadow(0px 1px 21px 0px rgba(0, 0, 0, 0.25));
+		border: none;
+
+	}
+	.card-title {line-height: 1.5; letter-spacing: 1.5px;}
+
+	.modal-dialog {
+      max-width: 800px;
+      margin: 30px auto;
+  }
+	}
+	#clock span {
+		display: inline-block;
+		background: $white-color;
+		padding: 10px 0;
+		text-align: center;
+		width: 45px;
+		@include border-radius(3px);
+		color: $tc-primary-color;
+	    font-size: 1.8rem;
+		font-weight: 700;
+		margin: 0 0.3rem;
+		position: relative;
+		&::after {position: absolute; bottom: -30px; font-size: 0.9rem; left: 0px; width: 45px; font-weight: 300; color: $tc-secondary-color;}
+		&:first-child {
+		&::after {content: "DAYS"}
+			}
+		&:nth-child(2) {
+		&::after {content: "HRS."}
+			}
+		&:nth-child(3) {
+		&::after {content: "MIN."}
+			}
+		&:last-child {
+		&::after {content: "SEC."}
+			}
+	}
+
+#particles-js {
+		position: absolute;
+		top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+
+	}
+
+	.watchvid {
+		text-decoration: none !important;
+		display: inline-block;
+		outline: 0px !important;
+		font-size: 1.1rem;
+		width: 260px;
+		position: relative;
+		padding:10px 0 0 85px;
+		span {font-size: 0.8rem;}
+	}
+	.watchvid:before {
+		content: url(../../images/playVideo.png);
+		float: left;
+		position: absolute;
+		left: 0px;
+		top: 0px;
+	}
+
+
+
+
+
+@media (min-width:768px) {
+.banner {
+	h1{font-size: 2.5rem;}
+
+		}
+	#clock span {
+		width: 60px;
+		font-size: 2rem;
+		&::after{width: 60px;}
+	}
+}
+@media (min-width:1200px) {
+	#clock span {
+		width: 68px;
+		&::after{width: 68px;}
+	}
+}

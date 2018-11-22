@@ -1,0 +1,35 @@
+/* 10 - teams */
+.teams{
+	.card {
+		border: none;  
+		.avatar{
+			overflow: hidden;
+		
+			img {@include transition(all 0.4s);}
+	}
+		&:hover{
+			.avatar img{
+				@include transform(scale(1.1));
+			}
+		}
+		
+		.socialM a{
+			color: #999;
+			font-size: 1rem;
+			width: 25px;
+			height: 25px;
+				&:hover{
+					color: $tc-primary-color;
+					}
+		}
+	}
+	
+	h5 {
+		text-transform: uppercase;
+		letter-spacing: 2px;
+		font-size: 1rem;
+		color: $tc-primary-color;
+	}
+	
+	
+}
